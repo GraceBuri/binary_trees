@@ -1,6 +1,6 @@
 #include "binary_trees.h"
 /**
- * is_full_recursive - check if binary is full 
+ * is_full_recursive - check if binary is full
  * @tree: Pointer to the root node
  * Return: if tree is not full return 0 else 1
  */
@@ -12,7 +12,7 @@ int is_full_recursive(const binary_tree_t *tree)
 		   (tree->left == NULL && tree->right != NULL) ||
 		   is_full_recursive(tree->left) == 0 ||
 		   is_full_recursive(tree->right) == 0)
-			return(0);
+			return (0);
 	}
 	return (1);
 }
